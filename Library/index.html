@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🧭 LIBRARY</h1>
+
+        <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#store">Store</a></li>
+       </ul>
+    </header>
+
+
+    <main>
+
+    <!-- HOME -->
+    <section id="home" class="page-section">
+
+        <h2>📚 The Library</h2>
+
+        <p class="section-description">
+            Here are all the books registered in your library.
+        </p>
+
+        <button id="new-book-btn">+ New Book</button>
+
+        <form id="book-form">
+
+            <input
+                id="title"
+                type="text"
+                placeholder="Book title"
+                required
+            >
+
+            <input
+                id="author"
+                type="text"
+                placeholder="Author"
+                required
+            >
+
+            <input
+                id="pages"
+                type="number"
+                placeholder="Pages"
+                required
+            >
+
+            <label>
+                <input id="read" type="checkbox">
+                Read
+            </label>
+
+            <button type="submit">Add Book</button>
+
+        </form>
+
+        <div id="library-container">
+            <!-- Books will appear here -->
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+  <section id="about" class="page-section">
+
+    <div class="about-content">
+
+        <div class="about-text">
+            <h2>ℹ️ About the Library</h2>
+
+            <p>
+                Small Library System is a simple web application
+                for managing and organizing books.
+            </p>
+
+            <p>
+                Users can register books, view their library,
+                remove books, and update the reading status of
+                each book.
+            </p>
+
+            <h3>What can you do?</h3>
+
+            <ul>
+                <li>Add new books</li><br>
+                <li>View registered books</li><br>
+                <li>Remove books</li><br>
+                <li>Change reading status</li><br>
+                <li>Organize your personal library</li><br>
+            </ul>
+        </div>
+
+        <div class="about-image">
+            <img src="../images/library.jpg" alt="Library">
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- STORE -->
+    <section id="store" class="page-section">
+
+        <h2>🛍️ Book Store</h2>
+
+        <p>
+            Discover books you might want to add to your
+            reading list.
+        </p>
+
+        <div class="store-books">
+
+            <div class="store-card">
+                <h3>Atomic Habits</h3>
+                <p>James Clear</p>
+                <button>Add to Library</button>
+            </div>
+
+            <div class="store-card">
+                <h3>The Alchemist</h3>
+                <p>Paulo Coelho</p>
+                <button>Add to Library</button>
+            </div>
+
+            <div class="store-card">
+                <h3>Clean Code</h3>
+                <p>Robert C. Martin</p>
+                <button>Add to Library</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
