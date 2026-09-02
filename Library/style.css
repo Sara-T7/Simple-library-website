@@ -11,6 +11,8 @@ body {
     background: #ffffff;
     font-family: Georgia, serif;
     color: #111;
+    height: 100vh;
+    position: static;
 }
 
 
@@ -318,4 +320,10 @@ main {
 p{
     font-family: 'Times New Roman', Times, serif;
     font-size: bold;
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(20, 20, 97);
+    color: white;
 }
